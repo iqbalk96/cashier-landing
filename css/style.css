@@ -82,7 +82,7 @@ body {
 }
 
 .navbar {
-    --bs-navbar-padding-y:0;
+    --bs-navbar-padding-y: 0;
 }
 
 .navbar-nav .nav-item a:hover {
@@ -91,7 +91,7 @@ body {
     font-weight: var(--fwsemibold);
 }
 
-.navbar-nav .nav-item a{
+.navbar-nav .nav-item a {
     color: var(--navy);
     transition: all 0.3 ease;
     font-weight: var(--fwsemibold);
@@ -154,6 +154,10 @@ body {
     margin-bottom: 10px;
 }
 
+.mb-16 {
+    margin-bottom: 16px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -173,7 +177,6 @@ body {
 .card-brand .logo {
     height: 50px;
     margin-top: 30px;
-
 }
 
 .carousel-wrapper {
@@ -204,20 +207,108 @@ body {
     overflow: hidden;
 }
 
-@keyframes moveSlidesToLeft{
-    0%{
+.text-button {
+    text-decoration: none;
+    color: var(--blue);
+    transition: all 0.3 ease;
+    font-weight: var(--fwbold);
+}
+
+.text-button:hover {
+    text-decoration: underline;
+    color: var(--navy);
+}
+
+.features .features-wrapper .big-feature-card {
+    padding: 30px;
+    border-radius: 16px;
+    background: var(--white);
+    padding-bottom: 60px;
+    cursor: pointer;
+}
+
+.features .features-wrapper .big-feature-card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.features .features-wrapper .small-feature-card {
+    padding: 30px;
+    border-radius: 16px;
+    background: var(--white);
+    padding-bottom: 32px;
+    cursor: pointer;
+}
+
+.features .features-wrapper .small-feature-card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.5 ease;
+}
+
+.features .features-wrapper h3{
+    padding-top: 16px;
+}
+
+.features .features-wrapper .icon {
+    float: left;
+    width: 60px;
+    height: 200px;
+    margin-right: 18px;
+}
+
+.features .features-wrapper .small-feature-card .icon {
+    height: 100px;
+}
+
+.features .features-wrapper .icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.features-wrapper:hover .big-feature-card:not(:hover) {
+    filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.features-wrapper:hover .small-feature-card:not(:hover) {
+    filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+textarea.form-control {
+    border-radius: 16px;
+}
+
+.form-control {
+    border-radius: 50px;
+    border: 0;
+    background: var(--white);
+    padding: 12px 20px 12px 20px;
+}
+
+.form-select {
+    border-radius: 50px;
+    border: 0;
+    background: var(--white);
+    padding: 12px 20px 12px 20px;
+    background-image: url('../images/ic_ad.svg');
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+}
+
+@keyframes moveSlidesToLeft {
+    0% {
         transform: translateX(100%);
     }
-    to{
+    to {
         transform: translateX(0%);
     }
 }
 
-@keyframes moveSlidesToRight{
-    0%{
+@keyframes moveSlidesToRight {
+    0% {
         transform: translateX(0%);
     }
-    to{
+    to {
         transform: translateX(100%);
     }
 }
